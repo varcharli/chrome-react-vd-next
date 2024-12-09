@@ -1,0 +1,124 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #363636;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.container {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+
+.icon-button {
+    display: inline-block;
+    align-self: center;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 233, 0);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon-button span {
+    margin-left: 5px;
+}
+
+.icon-button:hover {
+    color: #22c501;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.button:hover {
+    background-color: #22c501;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.message.error {
+    color: red;
+}
+
+.message.success {
+    color: rgb(0, 233, 0);;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #5b5b5b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    gap: 15px;
+}
+
+.panel h2 {
+    font-size: 20px;
+}
+
+.panel label {
+    font-size: 16px;
+}
+
+.panel input {
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 4px;
+    background-color: #363636;
+    color: white;
+    /* width: 100%; */
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: grey;
+}
