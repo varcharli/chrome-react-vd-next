@@ -7,10 +7,9 @@ const apiPath = serverUrl + '/scraper';
 const tokenKey = 'token';
 
 const api = axios.create({
-    baseURL: apiPath, // 设置基础 URL
+    baseURL: apiPath, 
 });
 
-// 请求拦截器
 api.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem(tokenKey);
@@ -24,7 +23,6 @@ api.interceptors.request.use(
     }
 );
 
-// 添加响应拦截器
 // api.interceptors.response.use(
 //     response => response,
 //     error => {

@@ -1,6 +1,6 @@
-const siteA = "https://www.yjys02.com/";
+const siteA = "https://www.--alreadyclose.com/";
 const siteB = "https://movie.douban.com/";
-const siteC = "https://www.52bdys.com/";
+const siteC = "https://www.--alreadyclose.com/";
 
 export const determineAndFetchMovieData = () => {
     function getInnerText(selector) {
@@ -22,8 +22,7 @@ export const determineAndFetchMovieData = () => {
 
     const url = window.location.href;
     console.log('Current URL:', url);
-    // console.error('Error:' + url);
-    // 'https://www.yjys02.com/'
+
 
     if (url.startsWith(siteA)) {
         console.log('Using rule A');
@@ -56,7 +55,7 @@ export const determineAndFetchMovieData = () => {
                 }
             });
 
-            // 匹配 <tbody id="download-list"> 并提取下载链接
+            //  <tbody id="download-list">
             const downloadList = document.querySelector('#download-list');
             if (downloadList) {
                 const downloadLinks = downloadList.querySelectorAll('a');
@@ -78,7 +77,6 @@ export const determineAndFetchMovieData = () => {
             return null;
         }
     } else if (url.startsWith(siteB)) {
-        // https://movie.douban.com/subject/19976773/
         try {
             const movieName = getInnerText('#content h1 span:first-of-type');
             const moviePostUrl = getAttribute('#mainpic img', 'src');
